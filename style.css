@@ -8,10 +8,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    
-    padding-right: 100px;
-    padding-left: 100px;
-    overflow-x: hidden;
+
 }
 h1{
     font-size: 52px;
@@ -38,7 +35,7 @@ h4{
 
 }
 p{
-    font: 16px;
+    font-size: 16px;
 
 }
 hr{
@@ -57,6 +54,7 @@ span{
 
 /* Nav-bar styles */
 .navigation{
+    padding:0 133px 180px 120px;
     display: flex;
     flex-direction:row;
     justify-content: space-between;
@@ -72,35 +70,25 @@ span{
 
 
 }
- /* Influencer styles  */   
-
+ /* Influencer styles  */  
+  
 .first-container{
     
     display: flex;
-    padding-bottom: 150px;
-    
-    
-  
-
-
+    padding:100px 133px 170px 120px;
+ 
 }
-.influencer-details{
-
-    margin-top: 70px;
-
-
-
+.influencer-details>p{
+    padding-bottom: 20px;
 
 }
 .button{
-
     background-color: #E02C6D ;
     padding: 10px 24px;
     border-radius: 41px;
     text-decoration: none;
     color: white;
-    
-
+ 
 }
 
 
@@ -108,7 +96,7 @@ span{
     padding-left:100px;
     
     border-radius: 50%;
-    width: 50%;
+    width: 100%;
     background-image: url(images/Circle\ design.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -194,6 +182,7 @@ span{
     bottom: 0;
     left: 1000px;
     padding-top: 30px;
+    font-size: 16px;
     
     
 }
@@ -210,7 +199,7 @@ text-decoration: none;
 
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    padding-bottom: 50px;
+    padding:0 133px 170px 120px;
 
 }
 
@@ -232,25 +221,46 @@ text-decoration: none;
    /* Responsivenss  */
 
 @media only screen and (max-width:668px) {
-body{
-    padding-right:0;
-    padding-left: 0;
 
-}
 .navigation{
     display: none;
+    
 }
 .first-container{
     display:block;
+    padding: 30px;
+    /* display: flex;
+    flex-direction: column; */
+}
+h1{
+    font-size: 28px;
+}
+p{
+    font-size: 14px;
+}
+.button{
+    /* display: block; */
+    font-size: 9px;
+}
+.influencer-image{
+    padding-left: 0px;
+
 
 }
 .img-size{
-    width: 100%;
+     display: block;
+     
+     width: 100%;
+     align-items: center;
+     justify-content: center;
+     
+  
 }
 
 .external-links{
     display: flex;
     flex-direction: column;
+    
 
 }
 .grid-container{
@@ -263,18 +273,25 @@ body{
     display: block;
     position: relative;
     bottom: 0;
-    left: 0px;
-    padding: 0px;
+    left: 0;
+    padding-top: 30px;
+    font-size: 16px;
 }
 .third-container{
     display: flex;
     flex-direction: column;
+    padding:20px;
 
 }
+
 .ending{
     position: static;
-    width: 300px;
+    width: 80%;
     height: 211px;
+
+}
+.about-us-img{
+    width: 100%;
 
 }
 .about-size{
@@ -282,3 +299,78 @@ body{
 }
 
 }
+
+@media only screen and (min-width:689px) and  (max-width:991px) {
+
+    .navigation{
+        display: none;
+    }
+    .first-container{
+        display:flex;
+        flex-direction: column;
+        
+    }
+    .img-size{
+         
+        margin: auto;
+         width: 50%;
+         padding-top: 100px; 
+             
+        
+        
+    }
+    
+    .external-links{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .external-links a{
+        padding-bottom: 30px;
+    
+    }
+    .link-img-size{
+        height: 80px;
+    }
+    .grid-container{
+        padding:0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+    .button2{
+        display: block;
+       position: static;
+        bottom: 0;
+        left: 0px; 
+        padding: 0px;
+    }
+    .third-container{
+        display: flex;
+        flex-direction: column;
+    
+    }
+   
+    .about-size{
+        font-size: 30px;
+    }
+    .about-us-img{
+
+        width: 100%;
+    
+    }
+    .third-container{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    
+    }
+    .ending{
+        padding: 30px;  
+    
+    }
+    
+    }
+    
+    
