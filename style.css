@@ -1,0 +1,111 @@
+
+/* font styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+
+    /* common styles*/
+
+    body{
+        font-family: 'Poppins', sans-serif;
+
+
+    }
+    h1{
+        font-size: 52px;
+
+
+    }
+    h2{
+        font-size: 28px;
+        text-align: center;
+
+
+    }
+    h3{
+        font-size: 24px;
+
+    }
+    p{
+        font: 16px;
+
+    }
+    hr{
+        padding:1px;
+        margin-left: 100px;
+        margin-right: 100px;
+        background-color: orange;
+        border: none;
+
+
+    }
+
+/* Nav-bar styles */
+.navigation{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-bar a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: #3A3A3A;
+
+
+
+}
+ /* Influencer styles  */   
+
+.first-container{
+    
+    display: flex;
+    
+    
+  
+
+
+}
+.influencer-details{
+
+       margin-top: 70px;
+
+
+
+
+}
+.button{
+
+    background-color: #E02C6D ;
+    padding: 10px 24px;
+    border-radius: 41px;
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+
+.influencer-image{
+    padding-left:150px;
+    
+    border-radius: 50%;
+    width: 40%;
+    
+
+}
+
+
+    /* external links  */
+.external-links{
+    align-items: center;
+    padding-left: 60px;
+    
+    
+
+
+}
+.external-links>a>img{
+    padding-left: 100px;
+
+}
