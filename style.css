@@ -165,3 +165,25 @@
     padding-right: 50px;
 text-align: right;
 }
+
+
+/* last container  */
+.third-container{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+/* Footer  */
+
+.ending{
+    text-align: center;
+    background-color: #0A0826
+    ;
+    color: white;
+    padding: 30px;  
+
+}
+.ending-links{
+    color: white
