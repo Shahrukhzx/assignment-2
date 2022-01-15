@@ -1,6 +1,7 @@
 
 /* font styles */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@500;600&display=swap');
 
 
     /* common styles*/
@@ -18,11 +19,19 @@
     h2{
         font-size: 28px;
         text-align: center;
+        padding-bottom: 30px;
 
 
     }
     h3{
         font-size: 24px;
+
+    }
+    h4{
+        font-family: 'Inter', sans-serif;
+        
+        font-size: 24px;
+        font-weight:400;
 
     }
     p{
@@ -38,7 +47,11 @@
 
 
     }
+    span{
+        font-size: 10px;
 
+
+    }
 /* Nav-bar styles */
 .navigation{
     display: flex;
@@ -87,10 +100,14 @@
 
 
 .influencer-image{
-    padding-left:150px;
+    padding-left:100px;
     
     border-radius: 50%;
     width: 40%;
+    background-image: url(images/Circle\ design.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     
 
 }
@@ -98,6 +115,7 @@
 
     /* external links  */
 .external-links{
+   
     align-items: center;
     padding-left: 60px;
     
@@ -108,4 +126,42 @@
 .external-links>a>img{
     padding-left: 100px;
 
+}
+
+
+    /* Grid container  */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+
+}
+    /* star styles */
+.fa-star{
+    font-size: 10px;
+    width: 11.07px;
+    height: 10.32px;
+}
+.fa-star,.filled{
+    color: #FB8200
+    ;
+   
+
+}
+.grid-cell-details{
+ 
+
+
+}
+.grid-details{
+
+    font-weight: 700;
+    font-size: 14px;
+
+    
+}
+.button2{
+    padding-right: 50px;
+text-align: right;
 }
